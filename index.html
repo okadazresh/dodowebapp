@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="language-selector">
+        <select id="language-select" onchange="changeLanguage()">
+          <option value="en">English</option>
+          <option value="ar">العربية</option>
+          <option value="ckb">کوردی</option>
+        </select>
+        <div class="main-logo">
+          <img
+            src="https://i.ibb.co/RTrcxHnM/dodologo.png"
+            width="150px"
+            height="150px"
+            alt="dodologo"
+          />
+        </div>
+      </div>
+
+      <header>
+        <div
+          class="logo"
+          data-en="Dodo Pizza"
+          data-ar="دودو بیتزا"
+          data-ckb="دودو پیتزا"
+        >
+          Restaurant Name
+        </div>
+        <div
+          class="description"
+          data-en="For the love of Pizza"
+          data-ar="من أجل حب البيتزا"
+          data-ckb="بۆ خۆشەویستی پیتزا"
+        >
+          For the love of Pizza
+        </div>
+      </header>
+
+      <div class="menu-categories">
+        <button
+          class="category-btn active"
+          data-category="starters"
+          data-en="Appetizers"
+          data-ar="المقبلات"
+          data-ckb="مقەبیلات"
+        >
+          Appetizers
+        </button>
+
+        <!-- <button
+          class="category-btn"
+          data-category="mains"
+          data-en="Main Meal"
+          data-ar="الأطباق الرئيسية"
+          data-ckb="خواردنی سەرەکی"
+        >
+          Main Meal
+        </button> -->
+
+        <!-- 
+        <button
+          class="category-btn"
+          data-category="desserts"
+          data-en="Desserts"
+          data-ar="الحلويات"
+          data-ckb="شیرینی"
+        >
+          Desserts
+        </button> -->
+
+        <button
+          class="category-btn"
+          data-category="pizza"
+          data-en="Pizza"
+          data-ar="بيتزا"
+          data-ckb="پیتزا"
+        >
+          Pizza
+        </button>
+        <button
+          class="category-btn"
+          data-category="sandwich"
+          data-en="Sandwich"
+          data-ar="ساندویج"
+          data-ckb="ساندویچ"
+        >
+          Sandwich
+        </button>
+        <button
+          class="category-btn"
+          data-category="burger"
+          data-en="Burger"
+          data-ar="برجر"
+          data-ckb="بەرگەر"
+        >
+          Burger
+        </button>
+        <button
+          class="category-btn"
+          data-category="rizo"
+          data-en="Rizo"
+          data-ar="ريزو"
+          data-ckb="ڕیزۆ"
+        >
+          Rizo
+        </button>
+        <button
+          class="category-btn"
+          data-category="shawrma"
+          data-en="Shawrma"
+          data-ar="شاورما"
+          data-ckb="شاورمە"
+        >
+          Shawrma
+        </button>
+        <button
+          class="category-btn"
+          data-category="sandwichfries"
+          data-en="Sandwich / Fries"
+          data-ar="ساندويتج / بطاطس"
+          data-ckb="ساندویچ / پەتاتە"
+        >
+          Sandwich / Fries
+        </button>
+
+        <button
+          class="category-btn"
+          data-category="drinks"
+          data-en="Drinks"
+          data-ar="المشروبات"
+          data-ckb="خواردنەوەکان"
+        >
+          Drinks
+        </button>
+      </div>
+
+      <!-- MENU SECTION -->
+
+      <!-- APPETIZERS -->
+
+      <!-- Big Appetizers -->
+      <div id="starters" class="menu-section active">
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Big Appetizers"
+                data-ar="مقبیلات كبیرة"
+                data-ckb="مقەبیلاتی گەورە"
+                >Big Appetizers</span
+              >
+              <span class="item-price">IQD 3,000</span>
+            </div>
+            <!-- <div
+              class="item-description"
+              data-en="Grilled bread rubbed with garlic and topped with diced tomatoes, fresh basil, and olive oil candied apples, carrots and eggplant"
+              data-ar="خبز مشوي مدهون بالثوم ومغطى بالطماطم المقطعة والريحان الطازج وزيت الزيتون التفاح المسكر، الجزر و الباذنجان"
+              data-ckb="نانی برژاو بە سیر و تەماتەی ، وردکراو و ڕێحانەی تازە و زەیتی زەیتوون سێوی خۆشكراو، گێزەر وە باینجان"
+            >
+              Big - Grilled bread rubbed with garlic and topped with diced
+              tomatoes, fresh basil, and olive oil
+            </div> -->
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Salad"
+                data-ar="سلطة"
+                data-ckb="زەڵاتە"
+                >Salad</span
+              >
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/n28p6Rb/appetizers.jpg"
+              alt="big appetizers"
+            />
+          </div>
+        </div>
+
+        <!-- Small Appetizers -->
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Small Appetizers"
+                data-ar="مقبیلات صغیرة"
+                data-ckb="مقەبیلاتی بچووك"
+                >Small Appetizers</span
+              >
+              <span class="item-price">IQD 2,000</span>
+            </div>
+            <!-- <div
+              class="item-description"
+              data-en="Grilled bread rubbed with garlic and topped with diced tomatoes, fresh basil, and olive oil candied apples, carrots and eggplant"
+              data-ar="خبز مشوي مدهون بالثوم ومغطى بالطماطم المقطعة والريحان الطازج وزيت الزيتون التفاح المسكر، الجزر و الباذنجان"
+              data-ckb="نانی برژاو بە سیر و تەماتەی ، وردکراو و ڕێحانەی تازە و زەیتی زەیتوون سێوی خۆشكراو، گێزەر وە باینجان"
+            >
+              Small - Grilled bread rubbed with garlic and topped with diced
+              tomatoes, fresh basil, and olive oil candied apples, carrots and
+              eggplant
+            </div> -->
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Salad"
+                data-ar="سلطة"
+                data-ckb="زەڵاتە"
+                >Salad</span
+              >
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/n28p6Rb/appetizers.jpg"
+              alt="Small appetizers"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- MAIN MEAL  -->
+
+      <!-- Grilled Salmon -->
+      <!-- <div id="mains" class="menu-section">
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Grilled Salmon"
+                data-ar="سلمون مشوي"
+                data-ckb="سالمۆنی برژاو"
+                >Grilled Salmon</span
+              >
+              <span class="item-price">$24.99</span>
+            </div>
+            <div
+              class="item-description"
+              data-en="Fresh Atlantic salmon fillet, grilled and served with seasonal vegetables and lemon butter sauce"
+              data-ar="فيليه سلمون أطلسي طازج، مشوي ويقدم مع خضروات موسمية وصلصة الزبدة بالليمون"
+              data-ckb="فیلێی سالمۆنی ئەتڵەسی تازە، برژاو لەگەڵ سەوزەی وەرزی و سۆسی کەرەی لیمۆ"
+            >
+              Fresh Atlantic salmon fillet, grilled and served with seasonal
+              vegetables and lemon butter sauce
+            </div>
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Gluten-Free"
+                data-ar="خالي من الغلوتين"
+                data-ckb="بێ گلوتین"
+                >Gluten-Free</span
+              >
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="/api/placeholder/100/100" alt="Grilled Salmon" />
+          </div>
+        </div> -->
+
+      <!-- Pasta Primavera -->
+      <!-- <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Pasta Primavera"
+                data-ar="باستا بريمافيرا"
+                data-ckb="پاستای پریماڤێرا"
+                >Pasta Primavera</span
+              >
+              <span class="item-price">$18.99</span>
+            </div>
+            <div
+              class="item-description"
+              data-en="Fettuccine pasta with fresh seasonal vegetables in a light cream sauce"
+              data-ar="معكرونة فيتوتشيني مع الخضروات الموسمية الطازجة في صلصة كريمة خفيفة"
+              data-ckb="پاستای فیتۆچینی لەگەڵ سەوزەی وەرزی تازە لە سۆسی کرێمی سووک"
+            >
+              Fettuccine pasta with fresh seasonal vegetables in a light cream
+              sauce
+            </div>
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Vegetarian"
+                data-ar="نباتي"
+                data-ckb="ڕووەکی"
+                >Vegetarian</span
+              >
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="/api/placeholder/100/100" alt="Pasta Primavera" />
+          </div>
+        </div>
+      </div> -->
+
+      <!-- Pizza -->
+      <div id="pizza" class="menu-section">
+        <!-- Pizza items will go here -->
+
+        <!-- Local Meat -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Local Meat"
+                data-ar="اللحوم المحلیة"
+                data-ckb="گۆشتی خۆماڵی"
+                >Local Meat</span
+              >
+            </div>
+
+            <!-- Small -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Small"
+                data-ar="صغير"
+                data-ckb="بچووك"
+                >Small</span
+              >
+              <span class="item-price">IQD 5,000</span>
+            </div>
+
+            <!-- Big -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Big"
+                data-ar="كبير"
+                data-ckb="گەورە"
+                >Big</span
+              >
+              <span class="item-price">IQD 7,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/9HkBJ4KT/meat-pizza.jpg"
+              alt="Local Meat"
+            />
+          </div>
+        </div>
+
+        <!-- Chicken Pizza -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Chicken"
+                data-ar="بيتزا الدجاج"
+                data-ckb="پیتزای مریشك"
+                >Local Meat</span
+              >
+            </div>
+
+            <!-- Small -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Small"
+                data-ar="صغير"
+                data-ckb="بچووك"
+                >Small</span
+              >
+              <span class="item-price">IQD 5,000</span>
+            </div>
+
+            <!-- Big -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Big"
+                data-ar="كبير"
+                data-ckb="گەورە"
+                >Big</span
+              >
+              <span class="item-price">IQD 7,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/Tq4MhbFB/chicken-pizza.jpg"
+              alt="Chicken Pizza"
+            />
+          </div>
+        </div>
+
+        <!-- Mix -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Mix"
+                data-ar="بيتزا مشكل "
+                data-ckb="پیتزای تێكەڵ"
+                >Mix</span
+              >
+            </div>
+
+            <!-- Small -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Small"
+                data-ar="صغير"
+                data-ckb="بچووك"
+                >Small</span
+              >
+              <span class="item-price">IQD 5,000</span>
+            </div>
+
+            <!-- Big -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Big"
+                data-ar="كبير"
+                data-ckb="گەورە"
+                >Big</span
+              >
+              <span class="item-price">IQD 7,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="https://i.ibb.co/KpBSHbGr/mix.jpg" alt="Mix" />
+          </div>
+        </div>
+
+        <!-- Vegetarian -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Vegetarian"
+                data-ar="بيتزا خضروات "
+                data-ckb="پیتزای سەوزەوات"
+                >Vegetarian</span
+              >
+            </div>
+
+            <!-- Small -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Small"
+                data-ar="صغير"
+                data-ckb="بچووك"
+                >Small</span
+              >
+              <span class="item-price">IQD 4,000</span>
+            </div>
+
+            <!-- Big -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Big"
+                data-ar="كبير"
+                data-ckb="گەورە"
+                >Big</span
+              >
+              <span class="item-price">IQD 5,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="https://i.ibb.co/F48jqm1J/veg.jpg" alt="Vegetarian" />
+          </div>
+        </div>
+
+        <!-- Four Seasons -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Four Seasons"
+                data-ar="بیتزا الفصول الأربعة"
+                data-ckb="پیتزای چوار وەرزی"
+                >Four Seasons</span
+              >
+            </div>
+
+            <!-- Small -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Small"
+                data-ar="صغير"
+                data-ckb="بچووك"
+                >Small</span
+              >
+              <span class="item-price">IQD 5,000</span>
+            </div>
+
+            <!-- Big -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Big"
+                data-ar="كبير"
+                data-ckb="گەورە"
+                >Big</span
+              >
+              <span class="item-price">IQD 7,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/PGqCmY7D/four-seasons.jpg"
+              alt="Four Seasons"
+            />
+          </div>
+        </div>
+
+        <!-- Tuna Fish -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Tuna Fish"
+                data-ar="بیتزا سمك التونة "
+                data-ckb="پیتزای ماسی توونە"
+                >Tuna Fish</span
+              >
+            </div>
+
+            <!-- Small -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Small"
+                data-ar="صغير"
+                data-ckb="بچووك"
+                >Small</span
+              >
+              <span class="item-price">IQD 5,000</span>
+            </div>
+
+            <!-- Big -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Big"
+                data-ar="كبير"
+                data-ckb="گەورە"
+                >Big</span
+              >
+              <span class="item-price">IQD 6,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/rfyg2vf3/tuna-fish.jpg"
+              alt="Tuna Fish"
+            />
+          </div>
+        </div>
+
+        <!-- Pepperoni -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Pepperoni"
+                data-ar="بیتزا بیبیرونی"
+                data-ckb="پیتزای پەپەڕۆنی"
+                >Pepperoni Pizza</span
+              >
+            </div>
+
+            <!-- Small -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Small"
+                data-ar="صغير"
+                data-ckb="بچووك"
+                >Small</span
+              >
+              <span class="item-price">IQD 5,000</span>
+            </div>
+
+            <!-- Big -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Big"
+                data-ar="كبير"
+                data-ckb="گەورە"
+                >Big</span
+              >
+              <span class="item-price">IQD 6,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/prKkT0YT/pepperoni-pizza.jpg"
+              alt="Pepperoni Pizza"
+            />
+          </div>
+        </div>
+
+        <!-- Margherita  -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Margherita"
+                data-ar="بیتزا ماركریتا"
+                data-ckb="پیتزای مارگەریتا"
+                >Margherita Pizza</span
+              >
+            </div>
+
+            <!-- Small -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Small"
+                data-ar="صغير"
+                data-ckb="بچووك"
+                >Small</span
+              >
+              <span class="item-price">IQD 5,000</span>
+            </div>
+
+            <!-- Big -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Big"
+                data-ar="كبير"
+                data-ckb="گەورە"
+                >Big</span
+              >
+              <span class="item-price">IQD 7,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/hxLsgx47/margareta.jpg"
+              alt="Margherita Pizza"
+            />
+          </div>
+        </div>
+
+        <!-- Meat Pizza Calzone -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Meat Pizza Calzone"
+                data-ar="بیتزا لحوم مغلقة"
+                data-ckb="پیتزای داخراوی گۆشت"
+                >Meat Pizza Calzone</span
+              >
+            </div>
+
+            <!-- Small -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Small"
+                data-ar="صغير"
+                data-ckb="بچووك"
+                >Small</span
+              >
+              <span class="item-price">IQD 5,000</span>
+            </div>
+
+            <!-- Big -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Big"
+                data-ar="كبير"
+                data-ckb="گەورە"
+                >Big</span
+              >
+              <span class="item-price">IQD 7,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/vxS400s3/meat-pizza-calzone.jpg"
+              alt="Meat Pizza Calzone"
+            />
+          </div>
+        </div>
+
+        <!-- Chicken Calzone Pizza -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Chicken Calzone"
+                data-ar="بیتزا دجاج مغلقة"
+                data-ckb="پیتزای داخراوی مریشك"
+                >Chicken Calzone Pizza</span
+              >
+            </div>
+
+            <!-- Small -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Small"
+                data-ar="صغير"
+                data-ckb="بچووك"
+                >Small</span
+              >
+              <span class="item-price">IQD 5,000</span>
+            </div>
+
+            <!-- Big -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Big"
+                data-ar="كبير"
+                data-ckb="گەورە"
+                >Big</span
+              >
+              <span class="item-price">IQD 7,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/wF7GTzDh/ch-copy.jpg"
+              alt="Chicken Calzone Pizza"
+            />
+          </div>
+        </div>
+
+        <!-- Mix Calzone Pizza -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Mix Calzone"
+                data-ar="بیتزا مشكل مغلقة"
+                data-ckb="پیتزای داخراوی تێكەڵ"
+                >Mix Calzone Pizza</span
+              >
+            </div>
+
+            <!-- Small -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Small"
+                data-ar="صغير"
+                data-ckb="بچووك"
+                >Small</span
+              >
+              <span class="item-price">IQD 5,000</span>
+            </div>
+
+            <!-- Big -->
+
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Big"
+                data-ar="كبير"
+                data-ckb="گەورە"
+                >Big</span
+              >
+              <span class="item-price">IQD 7,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/8gvPzX74/calzone-mix.jpg"
+              alt="Mix Calzone Pizza"
+            />
+          </div>
+        </div>
+
+        <!-- Close Div -->
+      </div>
+      <!-- Close Div -->
+
+      <!-- Sandwich -->
+      <div id="sandwich" class="menu-section">
+        <!-- Sandwich items will go here -->
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Beef Sandwich"
+                data-ar="ساندویج لحم"
+                data-ckb="ساندویچی گۆشت"
+                >Fried beef in a soft bun with lettuce, tomatoes, pickles</span
+              >
+              <span class="item-price">IQD 2,000</span>
+            </div>
+
+            <!-- <div
+              class="item-description"
+              data-en="Glass / Bottle"
+              data-ar="كأس / زجاجة"
+              data-ckb="پەرداخ / بتڵ"
+            >
+              Glass / Bottle
+            </div> -->
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/4RBSyjrS/beef-sandwich.jpg"
+              alt="beef sandwich"
+            />
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Chicken Sandwich"
+                data-ar="ساندويتش دجاج"
+                data-ckb="ساندویچی مریشك"
+                >Chicken Sandwich</span
+              >
+              <span class="item-price">IQD 1,500</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/d035tCGv/istockphoto-1147164476-612x612.jpg"
+              alt="Chicken Sandwich"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- Burger -->
+      <div id="burger" class="menu-section">
+        <!-- Burger items will go here -->
+
+        <!-- Beef Burger -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Beef Burger"
+                data-ar="برجر اللحم"
+                data-ckb="بەرگەری گۆشت"
+                >Beef Burger</span
+              >
+              <span class="item-price">IQD 3,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/Q7ycbp5C/beef-burger.jpg"
+              alt="beef burger"
+            />
+          </div>
+        </div>
+
+        <!-- Chicken Burger -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Chicken Burger"
+                data-ar="برجر دجاج"
+                data-ckb="بەرگەری مریشك"
+                >Chicken Burger</span
+              >
+              <span class="item-price">IQD 3,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/pvWh1ZMc/Chicken-Burger.jpg"
+              alt="Chicken Burger"
+            />
+          </div>
+        </div>
+
+        <!-- Crispy Burger -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Crispy Burger"
+                data-ar="برجر كرسبی"
+                data-ckb="بەرگەری كریسپی"
+                >Crispy Burger</span
+              >
+              <span class="item-price">IQD 3,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/8DHynNzv/Crispy-Burger.jpg"
+              alt="Crispy Burger"
+            />
+          </div>
+        </div>
+
+        <!-- Double Burger -->
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Double Burger"
+                data-ar="برجر مزدوج"
+                data-ckb="بەرگەری دەبڵ"
+                >Double Burger</span
+              >
+              <span class="item-price">IQD 5,500</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/RTS80XMV/big-burger.jpg"
+              alt="Double Burger"
+            />
+          </div>
+        </div>
+
+        <!-- Cheese Burger -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Cheese Burger"
+                data-ar="برجر جبنة"
+                data-ckb="بەرگەری پەنیر"
+                >Double Burger</span
+              >
+              <span class="item-price">IQD 3,500</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/d4kyyPLf/Cheese-Burger.jpg"
+              alt="Cheese Burger"
+            />
+          </div>
+        </div>
+
+        <!-- Close Div -->
+      </div>
+      <!-- Close Div -->
+
+      <!-- Rizo -->
+      <div id="rizo" class="menu-section">
+        <!-- Rizo items will go here -->
+
+        <!-- Normal Rizo -->
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Normal Rizo"
+                data-ar="ریزو سادە"
+                data-ckb="ڕیزۆ سادە"
+                >Normal Rizo</span
+              >
+              <span class="item-price">IQD 2,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/rGQNyzF3/mexican-rice.jpg"
+              alt="Normal Rizo"
+            />
+          </div>
+        </div>
+
+        <!-- Crispy Rizo -->
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Crispy Rizo"
+                data-ar="ریزو كریسبی"
+                data-ckb="ڕیزۆ كریسپی"
+                >Crispy Rizo</span
+              >
+              <span class="item-price">IQD 5,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="https://i.ibb.co/Ld8CVCM7/rizo.jpg" alt="Normal Rizo" />
+          </div>
+        </div>
+
+        <!-- Crispy Cheese Rizo -->
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Crispy Cheese Rizo"
+                data-ar="ریزو كریسبی بالجبن"
+                data-ckb="ڕیزۆ كریسپی بە پەنیر"
+                >Crispy Rizo</span
+              >
+              <span class="item-price">IQD 7,500</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="https://i.ibb.co/Ld8CVCM7/rizo.jpg" alt="Normal Rizo" />
+          </div>
+        </div>
+
+        <!-- Close Div -->
+      </div>
+      <!-- Close Div -->
+
+      <!-- Shawrma -->
+      <div id="shawrma" class="menu-section">
+        <!-- Shawrma items will go here -->
+
+        <!-- Meat Shawrma -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Meat Shawrma"
+                data-ar="شاورمة لحم"
+                data-ckb="شاورمەی گۆشت"
+                >Meat Shawrma</span
+              >
+              <span class="item-price">IQD 2,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/0ph5FW4q/Meat-Shawrma.jpg"
+              alt="Meat Shawrma"
+            />
+          </div>
+        </div>
+
+        <!-- Chicken Shawrma -->
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Chicken Shawrma"
+                data-ar="شاورمة دجاج"
+                data-ckb="شاورمەی مریشك"
+                >Meat Shawrma</span
+              >
+              <span class="item-price">IQD 1,500</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/208k5738/chiken-Shawrma-copy.jpg"
+              alt="Chicken Shawrma"
+            />
+          </div>
+        </div>
+
+        <!-- Crispy Shawrma -->
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Crispy Shawrma"
+                data-ar="شاورمة كریسبی"
+                data-ckb="شاورمەی كریسپی"
+                >Crispy Shawrma</span
+              >
+              <span class="item-price">IQD 2,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/0RT8Jzk8/crispy-shawrma-copy.jpg"
+              alt="Crispy Shawrma"
+            />
+          </div>
+        </div>
+
+        <!-- Close Div -->
+      </div>
+      <!-- Close Div -->
+
+      <!-- Sandwichfries -->
+      <div id="sandwichfries" class="menu-section">
+        <!-- Sandwich/Fries items will go here -->
+
+        <!-- Beef Sandwich -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Beef Sandwich"
+                data-ar="ساندويتج لحم"
+                data-ckb="ساندویچی گۆشت"
+                >Beef Sandwich</span
+              >
+              <span class="item-price">IQD 2,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/4RBSyjrS/beef-sandwich.jpg"
+              alt="Beef Sandwich"
+            />
+          </div>
+        </div>
+
+        <!-- Chicken Sandwich -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Chicken Sandwich"
+                data-ar="ساندويتش دجاج"
+                data-ckb="ساندویچی مریشك"
+                >Chicken Sandwich</span
+              >
+              <span class="item-price">IQD 1,500</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/d035tCGv/istockphoto-1147164476-612x612.jpg"
+              alt="Chicken Sandwich"
+            />
+          </div>
+        </div>
+
+        <!-- Fries -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Fries"
+                data-ar="بطاطة فرایس"
+                data-ckb="فینگەری سادە"
+                >Chicken Sandwich</span
+              >
+              <span class="item-price">IQD 1,500</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="https://i.ibb.co/Gv0HjHyN/fries.jpg" alt="Fries" />
+          </div>
+        </div>
+
+        <!-- Cheese Fries -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Cheese Fries"
+                data-ar="بطاطة بلجبنة"
+                data-ckb="پەتاتە بە پەنیر"
+                >Chicken Sandwich</span
+              >
+              <span class="item-price">IQD 4,000</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/FkXf5vWK/cheese-fries.jpg"
+              alt="Cheese Fries"
+            />
+          </div>
+        </div>
+
+        <!-- Close Div -->
+      </div>
+      <!-- Close Div -->
+
+      <!-- DESSERTS -->
+      <!-- <div id="desserts" class="menu-section">
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Tiramisu"
+                data-ar="تيراميسو"
+                data-ckb="تیرامیسو"
+                >Tiramisu</span
+              >
+              <span class="item-price">$8.99</span>
+            </div>
+            <div
+              class="item-description"
+              data-en="Classic Italian dessert with layers of coffee-soaked ladyfingers and mascarpone cream"
+              data-ar="حلوى إيطالية كلاسيكية مع طبقات من بسكويت السافوياردي المنقوع بالقهوة وكريمة الماسكاربوني"
+              data-ckb="شیرینی کلاسیکی ئیتالی بە چینی بسکویتی قاوەیی و کرێمی ماسکارپۆنی"
+            >
+              Classic Italian dessert with layers of coffee-soaked ladyfingers
+              and mascarpone cream
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="/api/placeholder/100/100" alt="Tiramisu" />
+          </div>
+        </div>
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Chocolate Lava Cake"
+                data-ar="كيكة الحمم الشوكولاتة"
+                data-ckb="کێکی لاڤای شۆکۆلاتە"
+                >Chocolate Lava Cake</span
+              >
+              <span class="item-price">$9.99</span>
+            </div>
+            <div
+              class="item-description"
+              data-en="Warm chocolate cake with a molten chocolate center, served with vanilla ice cream"
+              data-ar="كيكة الشوكولاتة الدافئة مع مركز الشوكولاتة السائلة، تقدم مع آيس كريم الفانيليا"
+              data-ckb="کێکی شۆکۆلاتەی گەرم بە ناوەڕۆکی شۆکۆلاتەی توواوە، لەگەڵ ئایسکریمی ڤانیلا"
+            >
+              Warm chocolate cake with a molten chocolate center, served with
+              vanilla ice cream
+            </div>
+            <div class="dietary-info">
+              <span
+                class="dietary-tag"
+                data-en="Contains Nuts"
+                data-ar="يحتوي على مكسرات"
+                data-ckb="بە گوێز"
+                >Contains Nuts</span
+              >
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="/api/placeholder/100/100" alt="Chocolate Lava Cake" />
+          </div>
+        </div>
+      </div> -->
+
+      <!-- DRINKS -->
+      <div id="drinks" class="menu-section">
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Water"
+                data-ar="ماء"
+                data-ckb="ئاو"
+                >Water</span
+              >
+              <span class="item-price">IQD 250</span>
+            </div>
+          </div>
+          <div class="item-image">
+            <img src="https://i.ibb.co/mVN9rZtb/water.jpg" alt="Water" />
+          </div>
+        </div>
+
+        <!-- Pepsi -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Pepsi"
+                data-ar="بیبسی"
+                data-ckb="پێپسی"
+                >Fresh Lemonade</span
+              >
+              <span class="item-price">IQD 500</span>
+            </div>
+            <!-- <div
+              class="item-description"
+              data-en="Homemade lemonade with fresh lemons, sugar, and mint"
+              data-ar="عصير ليمون منزلي مع الليمون الطازج والسكر والنعناع"
+              data-ckb="شەربەتی لیمۆی دەستکرد بە لیمۆی تازە، شەکر و نەعنا"
+            >
+              Homemade lemonade with fresh lemons, sugar, and mint
+            </div> -->
+          </div>
+          <div class="item-image">
+            <img
+              src="https://i.ibb.co/Kp2p3pPK/pepsi.jpg"
+              alt="Fresh Lemonade"
+            />
+          </div>
+        </div>
+
+        <!-- Ayran -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span
+                class="item-name"
+                data-en="Ayran"
+                data-ar="عيران"
+                data-ckb="ماستاو"
+                >Ayran</span
+              >
+              <span class="item-price">IQD 250</span>
+            </div>
+            <!-- <div
+              class="item-description"
+              data-en="Homemade lemonade with fresh lemons, sugar, and mint"
+              data-ar="عصير ليمون منزلي مع الليمون الطازج والسكر والنعناع"
+              data-ckb="شەربەتی لیمۆی دەستکرد بە لیمۆی تازە، شەکر و نەعنا"
+            >
+              Homemade lemonade with fresh lemons, sugar, and mint
+            </div> -->
+          </div>
+          <div class="item-image">
+            <img src="https://i.ibb.co/fdhLwFsp/ayran.jpg" alt="Ayran" />
+          </div>
+        </div>
+
+        <!-- Tea -->
+
+        <div class="menu-item">
+          <div class="item-content">
+            <div class="item-header">
+              <span class="item-name" data-en="Tea" data-ar="شاي" data-ckb="چا"
+                >Ayran</span
+              >
+              <span class="item-price">IQD 500</span>
+            </div>
+            <!-- <div
+              class="item-description"
+              data-en="Homemade lemonade with fresh lemons, sugar, and mint"
+              data-ar="عصير ليمون منزلي مع الليمون الطازج والسكر والنعناع"
+              data-ckb="شەربەتی لیمۆی دەستکرد بە لیمۆی تازە، شەکر و نەعنا"
+            >
+              Homemade lemonade with fresh lemons, sugar, and mint
+            </div> -->
+          </div>
+          <div class="item-image">
+            <img src="https://i.ibb.co/45YSxcg/image.jpg" alt="Tea" />
+          </div>
+        </div>
+
+        <!-- Close Div -->
+      </div>
+      <!-- Close Div -->
+
+      <footer>
+        <div
+          data-en="Hours: Saturday - Friday 8 am - 12 Midnight "
+          data-ar="ساعات العمل: السبت - جمعة 8 صباحًا - 12 مساءً"
+          data-ckb="كاتی كاركردن: شەممە - هەینی 8 بەیانی - 12 شەو"
+        >
+          Hours:
+        </div>
+        <div
+          data-en="Address: Shaqlawa - Sarmaidan Next to Shaqlawa Technical Institute"
+          data-ar="العنوان: شقلاوة - سرميدان بجانب معهد شقلاوة التقني"
+          data-ckb="ناونیشان: شەقڵاوە - سەرمەیدان تەنیشت پەیمانگەی تەكنیكی شەقڵاوە"
+        >
+          Address:
+        </div>
+        <p>Phone: 964 750 782 1152</p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
